@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 3</title>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1;}
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="dropdown">
+                <button class="dropbtn">Menú</button>
+                <div class="dropdown-content">
+                    <a href="index.html">Inicio</a>
+                    <a href="pagina2.html">Página 1</a>
+                    <a href="pagina3.html">Página 2</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Página 3</h1>
+        <p>Contenido de la Página 3.</p>
+    </main>
+    <footer>
+        <p>© 2025 Mi Página Web</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Riego</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+    <script src="https://unpkg.com/paho-mqtt@1.1.0/paho-mqtt.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Sistema de Riego</h1>
+    </header>
+
+    <nav>
+        <div class="dropdown">
+            <button class="dropbtn">Menú</button>
+            <div class="dropdown-content">
+                <a href="pagina1.html">Página 1</a>
+                <a href="pagina2.html">Página 2</a>
+                <a href="pagina3.html">Página 3</a>
+            </div>
+        </div>
+    </nav>
+    </header>
+    <main>
+        <section id="status">
+            <h2>Estado del Sistema</h2>
+            <p>Temperatura Tablero: <span id="temperaturaTablero">Cargando...</span></p>
+            <p>Humedad Arandanos: <span id="humedadArandano">Cargando...</span></p>
+            <p>Temperatura Rasberry: <span id="temperaturaRaspberry">Cargando...</span></p>
+            <canvas id="humedadArandanoChar"></canvas> <!-- ID corregido -->
+            <canvas id="temperaturaTableroChar"></canvas> <!-- ID corregido -->
+            <canvas id="temperaturaRaspberryChar"></canvas> <!-- ID corregido -->
+        </section>
+    </main>
+</body>
+</html>
